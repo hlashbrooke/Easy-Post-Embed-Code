@@ -11,6 +11,8 @@ Adds each post's embed code to the post edit screen for easy copying.
 
 == Description ==
 
+*Note that this plugin requires WordPress 4.4+. Right now, that means that you will need to be running the latest beta release until 4.4 is officially released.*
+
 The oEmbed feature that is built into WordPress core from version 4.4 allows your content to be easily embedded in any other site. This is great if the site in which you are embedding your content supports oEmbed, but in many cases it does not. In these cases you will need to paste the full embed code on the site in question. This plugin provides that embed code for you right on the post edit screen.
 
 **Features**
@@ -20,7 +22,7 @@ The oEmbed feature that is built into WordPress core from version 4.4 allows you
 
 **How to contribute**
 
-If you want to contribute to Easy Post Embed Code, you can [fork the GitHub repository](https://github.com/hlashbrooke/Easy-Post-Embed-Code) - all pull requests will be .
+If you want to contribute to Easy Post Embed Code, you can [fork the GitHub repository](https://github.com/hlashbrooke/Easy-Post-Embed-Code) - all pull requests will be reviewed and merged if they fit into the goals for the plugin.
 
 == Installation ==
 
