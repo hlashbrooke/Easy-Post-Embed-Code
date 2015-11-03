@@ -11,7 +11,7 @@ Adds each post's embed code to the post edit screen for easy copying.
 
 == Description ==
 
-*Note that this plugin requires WordPress 4.4+. Right now, that means that you will need to be running the latest beta release until 4.4 is officially released.*
+*Note that this plugin requires WordPress 4.4+. Right now, that means that you will need to be running the 4.4 beta release until the final version is officially released. You can run the latest beta using the [WordPress Beta Tester](https://wordpress.org/plugins/wordpress-beta-tester/) plugin.*
 
 The oEmbed feature that is built into WordPress core from version 4.4 allows your content to be easily embedded in any other site. This is great if the site in which you are embedding your content supports oEmbed, but in many cases it does not. In these cases you will need to paste the full embed code on the site in question. This plugin provides that embed code for you right on the post edit screen.
 
@@ -50,11 +50,11 @@ That's not even a question, but the answer is most likely that you are using a W
 == Changelog ==
 
 = 1.0 =
-* 2015-11-05
+* 2015-11-03
 * Initial release
 
 == Upgrade Notice ==
 
 = 1.0 =
-* 2015-11-05
+* 2015-11-03
 * Initial release
