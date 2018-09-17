@@ -51,7 +51,7 @@ That's not even a question, but the answer is most likely that you are using a W
 
 = 1.0 =
 * 2015-11-03
-* Initial release
+* Initial release.
 
 == Upgrade Notice ==
 
