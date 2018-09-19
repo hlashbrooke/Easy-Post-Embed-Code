@@ -56,9 +56,17 @@ That's not even a question, but the answer is most likely that you are using a W
 
 = How do I use the shortcode? =
 
-The shortcode to display the embed code for a post is `[embed_code]`. If used in the context of a post it will show the embed code for that post, but you can also specify a different post using the ID in the `post` paramter. Additionally, you can also set a custom width and height for the size attributes of the embed code, with the default being 500 and 350 respectively. a shortcode with all the available parameters being used will look like this:
+The shortcode to display the embed code for a post is `[embed_code]`. If used in the context of a post it will show the embed code for that post, but you can also specify a different post using the ID in the `post` paramter. Additionally, you can also set a custom width and height for the size attributes of the embed code, with the default being 500 and 350 respectively.
+
+A shortcode with all the available parameters being used will look like this:
 
 `[embed_code post=36 width=800 height=400]`
+
+= How do I remove the styling that comes with the plugin? =
+
+There is some very minor CSS included for the frontend display of the embed code (mostly for spacing and alignment), but if you would like to remove that and handle it yourself then simply add this line to your theme's functions.php file or a custom plugin:
+
+`add_filter( 'easy_post_embed_code_use_css', '__return_false' );`
 
 == Changelog ==
 
