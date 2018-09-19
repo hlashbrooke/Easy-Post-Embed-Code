@@ -1,0 +1,13 @@
+.easy_post_embed_code_container .buttons {
+	display: block;
+	margin-top: 15px;
+	text-align: right;
+}
+.easy_post_embed_code_container label {
+	display: inline;
+}
+.easy_post_embed_code_container input[type="number"] {
+	display: inline;
+	width: 70px;
+	margin-right: 10px;
+}
