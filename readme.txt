@@ -1,13 +1,13 @@
 === Easy Post Embed Code ===
 Contributors: hlashbrooke
-Tags: embed, code, oembed, copy, post, gutenberg
+Tags: embed, code, oembed, copy, post, gutenberg, block
 Requires at least: 4.4
-Tested up to: 4.9.8
+Tested up to: 5.0
 Stable tag: 1.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Give you and your readers the ability to easily copy any post's embed code.
+Give you and your readers and publishers the ability to easily copy any post's embed code.
 
 == Description ==
 
@@ -19,8 +19,8 @@ You can also choose to display the post embed code on the frontend, allowing oth
 
 - Find your embed code directly on the post edit screen
 - Customise the width and height of the embed before copying the code
-- Add the embed code to your content with a shortcode or Gutenberg block
-- Fully Gutenberg compatible with meta box and custom block type
+- Add the embed code to your content with a shortcode or content block
+- Fully 5.0 compatible with meta box and custom block type
 - Fully backwards compatible with the current Classic Editor
 
 **How to contribute**
@@ -39,10 +39,10 @@ Installing "Easy Post Embed Code" can be done either by searching for "Easy Post
 
 1. The embed code meta box on the Classic Editor post edit screen.
 2. The full Classic Editor post edit screen (so you can see the meta box in context).
-3. The Gutenberg block after being added to the post content.
-4. The embed code meta box on the Gutenberg post edit screen.
+3. The content block after being added to the post content.
+4. The embed code meta box on the block editor post edit screen.
 5. The embed code being displayed on the frontend inside the post content.
-6. The standard appearance of a WordPress post embed (not created by this plugin).
+6. The standard appearance of a WordPress post embed (this comes from WordPress core itself and not this plugin).
 
 == Frequently Asked Questions ==
 

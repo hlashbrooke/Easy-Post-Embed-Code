@@ -2,12 +2,12 @@
 /*
  * Plugin Name: Easy Post Embed Code
  * Version: 1.1
- * Plugin URI: http://www.hughlashbrooke.com/
+ * Plugin URI: https://wordpress.org/plugins/easy-post-embed-code/
  * Description: Adds each post's embed code to the post edit screen for easy copying.
  * Author: Hugh Lashbrooke
- * Author URI: http://www.hughlashbrooke.com/
+ * Author URI: https://hugh.blog/
  * Requires at least: 4.4
- * Tested up to: 4.9.8
+ * Tested up to: 5.0
  *
  * Text Domain: easy-post-embed-code
  *
