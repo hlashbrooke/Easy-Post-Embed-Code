@@ -1,7 +1,7 @@
 <?php
 /*
  * Plugin Name: Easy Post Embed Code
- * Version: 1.1
+ * Version: 1.1.1
  * Plugin URI: https://wordpress.org/plugins/easy-post-embed-code/
  * Description: Adds each post's embed code to the post edit screen for easy copying.
  * Author: Hugh Lashbrooke
@@ -34,7 +34,7 @@ require_once( 'includes/class-easy-post-embed-code.php' );
  * @return object Easy_Post_Embed_Code
  */
 function Easy_Post_Embed_Code () {
-	$instance = Easy_Post_Embed_Code::instance( __FILE__, '1.1.0' );
+	$instance = Easy_Post_Embed_Code::instance( __FILE__, '1.1.1' );
 	return $instance;
 }
 
