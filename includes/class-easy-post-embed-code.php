@@ -145,7 +145,7 @@ class Easy_Post_Embed_Code {
 
 	public function embed_code_block_init () {
 
-		// Stop here if Gutenberg is not active
+		// Stop here if block editor is not active
 		if ( ! function_exists( 'register_block_type' ) ) {
 			return;
 		}
@@ -154,7 +154,7 @@ class Easy_Post_Embed_Code {
 		wp_register_script(
 			'embed-code-block',
 			$this->assets_url . 'js/embed-code-block.js',
-			array( 'wp-blocks', 'wp-components', 'wp-i18n', 'wp-element' ),
+			array( 'wp-editor', 'wp-blocks', 'lodash', 'wp-i18n', 'wp-element', 'wp-components' ),
 			filemtime( $this->assets_dir . '/js/embed-code-block.js' )
 		);
 
@@ -165,15 +165,22 @@ class Easy_Post_Embed_Code {
 			)
 		);
 
-		// Add localisation strings
-		wp_add_inline_script(
-			'embed-code-block',
-			sprintf(
-				'var easy_post_embed_code = { localeData: %s };',
-				json_encode( gutenberg_get_jed_locale_data( 'easy-post-embed-code' ) )
-			),
-			'before'
-		);
+		// Set script localisation - accounts for 5.0+, as well as pre-5.0 with the Gutenberg plugin activated
+		if ( function_exists( 'wp_set_script_translations' ) ) {
+			wp_set_script_translations( 'embed-code-block', 'easy-post-embed-code' );
+		} elseif ( function_exists( 'wp_get_jed_locale_data' ) || function_exists( 'gutenberg_get_jed_locale_data' ) ) {
+
+			$locale_data = function_exists( 'wp_get_jed_locale_data' ) ? wp_get_jed_locale_data( 'easy-post-embed-code' ) : gutenberg_get_jed_locale_data( 'easy-post-embed-code' );
+
+			wp_add_inline_script(
+				'embed-code-block',
+				sprintf(
+					'var easy_post_embed_code = { localeData: %s };',
+					$locale_data
+				),
+				'before'
+			);
+		}
 
 		// Define shortcode using same render function as the block
 		add_shortcode( 'embed_code', array( $this, 'embed_code_render' ) );

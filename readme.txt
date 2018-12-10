@@ -3,7 +3,7 @@ Contributors: hlashbrooke
 Tags: embed, code, oembed, copy, post, gutenberg, block
 Requires at least: 4.4
 Tested up to: 5.0
-Stable tag: 1.1
+Stable tag: 1.1.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -11,9 +11,9 @@ Give you and your readers and publishers the ability to easily copy any post's e
 
 == Description ==
 
-The oEmbed feature that is built into WordPress core from version 4.4 allows your content to be easily embedded in any other site. This is great if the site in which you are embedding your content supports oEmbed, but in many cases it does not. In these cases you will need to paste the full embed code on the site in question. This plugin provides that embed code for you directly on the post edit screen.
+WordPress allows you to embed your content in any other site easily. This is great if the site in which you are embedding your content supports oEmbed, but in many cases it does not. In these cases you will need to paste the full embed code on the site in question. This plugin provides that embed code for you directly on the post edit screen.
 
-You can also choose to display the post embed code on the frontend, allowing other people to share your content more easily, with the built-in shortcode or Gutenberg block. The shortcode can be customised to include default width and height options, as well as show the embed code for any other post by optionally specifying the post ID.
+You can also choose to display the post embed code on the frontend, allowing other people to share your content more easily, with the built-in shortcode or content block. The shortcode can be customised to include default width and height options, as well as show the embed code for any other post by optionally specifying the post ID.
 
 **Features**
 
@@ -70,6 +70,10 @@ There is some very minor CSS included for the frontend display of the embed code
 
 == Changelog ==
 
+= 1.1.1 =
+* 2018-12-10
+* Improving compatibility with WordPress 5.0+
+
 = 1.1 =
 * 2018-09-19
 * Adding shortcode and Gutenberg block for displaying embed code on the frontend.
@@ -80,5 +84,5 @@ There is some very minor CSS included for the frontend display of the embed code
 
 == Upgrade Notice ==
 
-= 1.1 =
-* 2018-09-19: Adding shortcode and Gutenberg block for displaying embed code on the frontend.
+= 1.1.1 =
+* This plugin is now fully compatible with WordPress 5.0+

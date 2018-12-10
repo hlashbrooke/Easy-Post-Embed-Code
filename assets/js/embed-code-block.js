@@ -2,8 +2,6 @@
     var el = element.createElement;
     var __ = i18n.__;
 
-    i18n.setLocaleData( window.easy_post_embed_code.localeData, 'easy-post-embed-code' );
-
     blocks.registerBlockType( 'easy-post-embed-code/embed-code-block', {
         title: __( 'Embed Code', 'easy-post-embed-code' ),
         icon: 'media-code',
